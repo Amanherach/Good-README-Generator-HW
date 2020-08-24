@@ -25,6 +25,11 @@ inquirer.prompt([
         name:"usage",
         message:"what is the usage?"
     },
+    {
+        type:"input",
+        name:"license",
+        message:"what is license does your project use?"
+    },
 ]).then(function(answers){
     console.log(answers)
 })
