@@ -1,0 +1,24 @@
+{
+  "name": "Good-README-Generator-HW",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achaudhry93/Good-README-Generator-HW.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/achaudhry93/Good-README-Generator-HW/issues"
+  },
+  "homepage": "https://github.com/achaudhry93/Good-README-Generator-HW#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
