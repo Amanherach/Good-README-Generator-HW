@@ -1,35 +1,66 @@
 // function to generate markdown for README
-function generateMarkdown(data) {
-    return `# ${data.title}
+function generateMarkdown(data, githubInfo) { //markdown data to be generated for README
+  return `
+  # **${data.title}**
 
-## Description    
-${data.description}  
+  ${data.badge}
 
-## Table of Contents
-1. [Installation](#Installation)
-2. [Usage](#Usage)
-3. [License](#License)
-4. [Contributing](#Contributing)
-5. [Tests](#Tests)
-6. [Questions](#Questions)
+  ## Description
 
-## Installation
-${data.installation}
+  ${data.description}
 
-## Usage
-${data.usage}
+  ## Table of Contents
 
-## License
-This project is licensed under the terms of the ${data.license} license.
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [License](#Licence)
+  - [Contributors](#Contributors)
+  - [Test](#Test)
+  - [Questions](#Questions)
+  - [Repository Link](#Repository)
+  - [Github Info](#Github)
+  - [Badges](#Badges)
 
-## Contributing
-${data.contributing} 
+  ## Installation
 
-## Tests
-${data.tests}
+  ${data.installation}
 
-## Questions
-  `;
-  }
-  
-  module.exports = generateMarkdown;
+  ## Usage
+
+  ${data.usage}
+
+  ## License
+
+  ${data.license}
+
+  ## Contributors
+
+  ${data.contributing}
+
+  ## Test
+
+  ${data.test}
+
+  ## Questions
+  If you have any questions, contact ${data.username} on GitHub.
+
+  ## Repository
+
+  - [Project Repo](${data.repo})
+
+  ## Github
+
+  ![image of me](${githubInfo.githubImage})
+  - ${githubInfo.name}
+  - [Github Profile](${githubInfo.profile})
+  - <${githubInfo.email}>
+
+  ## Badges
+![badmath](https://img.shields.io/github/repo-size/${data.username}/${data.repo})
+
+
+`;
+}
+
+module.exports = generateMarkdown;
