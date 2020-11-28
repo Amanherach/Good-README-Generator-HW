@@ -5,19 +5,25 @@
 An application that generates a README.md from a users input. The user will be prompted with questions about their project.
 
 ## Table of Contents
----
-1. [Installation](#Installation)
-2. [Usage](#Usage)
-3. [License](#License)
-4. [Contributing](#Contributing)
-5. [Tests](#Tests)
-6. [Questions](#Questions)
 
-## Installation 
----
-* npm init
-* npm install axios
-* npm install inquirer
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [License](#License)
+  - [Contributors](#Contributors)
+  - [Test](#Test)
+  - [Questions](#Questions)
+  - [Repository Link](#Repository)
+  - [Github Info](#Github)
+  - [Badges](#Badges)
+
+## Installation
+
+  Simply clone the code into your repo and install dependencies with 'npm i' command in terminal, then run the program with the command 'node index.js'.
+
+## Usage
+
+  Answer questions to generate README file.
 
 ## License
 ---
